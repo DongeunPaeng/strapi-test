@@ -886,6 +886,7 @@ export interface ApiPostPost extends Schema.CollectionType {
     >;
     publish_date: Attribute.Date;
     content: Attribute.Blocks;
+    slug: Attribute.UID;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
