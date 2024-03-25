@@ -15,17 +15,20 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
-    "content_markdown": {
-      "type": "richtext"
-    },
-    "author": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
+    },
+    "publish_date": {
+      "type": "date"
+    },
+    "content": {
+      "type": "blocks"
     }
   }
 }
